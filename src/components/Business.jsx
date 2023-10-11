@@ -22,16 +22,13 @@ const Business = () =>  (
   <section id="features" className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        You do the business, <br className="sm:block hidden" /> we’ll handle
-        the money.
+        Du fokuserar på ditt företag, <br className="sm:block hidden" /> vi hanterar bokföringen
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        With the right credit card, you can improve your financial life by
-        building credit, earning rewards and saving money. But with hundreds
-        of credit cards on the market.
+      Det är viktigt att ha en väl fungerande bokföring och redovisning för att kunna driva ett företag på ett effektivt sätt. Vi kan hjälpa dig med detta genom att ta hand om allt från löpande bokföring till årsbokslut och deklaration. Genom att anlita oss kan du fokusera på din kärnverksamhet och samtidigt känna dig trygg med att ekonomiarbetet sköts på ett korrekt sätt.
       </p>
 
-      <Button styles={`mt-10`} />
+      <Button to="features" styles={`mt-10`} />
     </div>
 
     <div className={`${layout.sectionImg} flex-col`}>

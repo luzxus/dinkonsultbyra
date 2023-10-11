@@ -1,21 +1,30 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star } from "../assets";
 
 export const navLinks = [
   {
     id: "home",
-    title: "Home",
+    title: "Hem",
   },
   {
     id: "features",
-    title: "Features",
+    title: "Tjänster",
   },
+  /*     {
+        id: "product",
+        title: "Product",
+      }, */
+
   {
-    id: "product",
-    title: "Product",
+    id: "prices",
+    title: "Priser",
   },
+/*   {
+    id: "about",
+    title: "Om oss",
+  }, */
   {
-    id: "clients",
-    title: "Clients",
+    id: "contact",
+    title: "Kontakt",
   },
 ];
 
@@ -23,23 +32,23 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Rewards",
+    title: "Löpande redovisning",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "Vi hjälper dig med dinlöpande reaovisning och ser till att få ett bra flöde när det gäller rutiner och rapportering.",
   },
   {
     id: "feature-2",
-    icon: shield,
-    title: "100% Secured",
+    icon: star,
+    title: "Årsredovisning",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "dinkonsultbyra hjälper dig med att upprätta bokslut samt årsredovisning. Våra revisorer säkerställer att allt utförs enligt god redovisningssed.",
   },
   {
     id: "feature-3",
-    icon: send,
-    title: "Balance Transfer",
+    icon: star,
+    title: "Skattedeklaration",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "Vår revisionsbyrå hjälper dig med alla typer av deklarationer. Vi ser till att denna viktiga del av ditt bolag sköts på ett korrekt och vitalt sätt.",
   },
 ];
 
@@ -47,109 +56,70 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
-    title: "Founder & Leader",
-    img: people01,
+      "Rekommenderar verkligen Robin på dinKonsultbyra. Supertrevlig, enkel att ha att göra med och snabb på att svara",
+    name: "Tobias",
+    //title: "Tobias",
+    img: people03,
   },
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
+      "Mycket bra! Trevligt bemötande och kunnig personal",
+    name: "Sebastian",
+    //title: "Sebastian",
     img: people02,
   },
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
-    img: people03,
+      "Allt toppen! Fick hjälp med årsbokslut och deklaration. Snabbt och smidigt. Bra kommunikation. Tack!",
+    name: "Kajsa",
+    //title: "Kajsa",
+    img: people01,
   },
 ];
 
 export const stats = [
   {
     id: "stats-1",
-    title: "User Active",
-    value: "3800+",
+    title: "Antal timmar frigjorda",
+    value: "100+",
   },
   {
     id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
+    title: "Företag som litar på oss",
+    value: "10+",
   },
   {
     id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
+    title: "Kundnöjdhet",
+    value: "5/5",
   },
 ];
 
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: "Användbara länkar",
     links: [
+
       {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
+        name: "Hur det går till",
+        id:"#how-it-works",
+        link: "https://www.dinkonsultbyra.org/how-it-works/",
       },
+    /*   {
+        name: "Kontakta oss",
+        id:"#contact",
+
+        link: "https://www.dinkonsultbyra.org/help-center/",
+      }, */
       {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
-      },
-      {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
-      },
-      {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
-      },
-      {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
-      },
-    ],
-  },
-  {
-    title: "Community",
-    links: [
-      {
-        name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
-      },
-      {
-        name: "Partners",
-        link: "https://www.hoobank.com/partners/",
-      },
-      {
-        name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
-      },
-      {
-        name: "Blog",
-        link: "https://www.hoobank.com/blog/",
-      },
-      {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
-      },
-    ],
-  },
-  {
-    title: "Partner",
-    links: [
-      {
-        name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
-      },
-      {
-        name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
-      },
+        name: "Blogg (kommer snart)",
+        id:"#blog",
+        link: "https://www.dinkonsultbyra.org/blog/",
+
+      }
+
     ],
   },
 ];
@@ -165,11 +135,7 @@ export const socialMedia = [
     icon: facebook,
     link: "https://www.facebook.com/",
   },
-  {
-    id: "social-media-3",
-    icon: twitter,
-    link: "https://www.twitter.com/",
-  },
+
   {
     id: "social-media-4",
     icon: linkedin,
@@ -178,7 +144,7 @@ export const socialMedia = [
 ];
 
 export const clients = [
-  {
+  /* {
     id: "client-1",
     logo: airbnb,
   },
@@ -193,5 +159,5 @@ export const clients = [
   {
     id: "client-4",
     logo: dropbox,
-  },
+  }, */
 ];

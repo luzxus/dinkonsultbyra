@@ -1,7 +1,8 @@
 import { useState } from "react";
 
-import { close, logo, menu } from "../assets";
+import { close, dklogo, logo, menu, piggy } from "../assets";
 import { navLinks } from "../constants";
+import styled from "styled-components";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -9,8 +10,9 @@ const Navbar = () => {
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={logo} alt="hoobank" className="w-[124px] h-[32px]" />
-
+     <LogoContainer>
+      <LogoText>Din Konsultbyrå</LogoText>
+    </LogoContainer>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
@@ -56,5 +58,22 @@ const Navbar = () => {
     </nav>
   );
 };
+
+// Define the styled component
+const LogoContainer = styled.div`
+  background-color: #000; /* Black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 124px;
+  width: 100px;
+`;
+
+const LogoText = styled.span`
+  font-size: 16px;
+  color: #fff; /* White text color */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+`;
 
 export default Navbar;

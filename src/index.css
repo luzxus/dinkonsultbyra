@@ -138,3 +138,109 @@
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
 }
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* .contact-page{
+  background: url('./assets/lamp_desk_with_book_pen.jpg');
+  background-size: ;
+  background-repeat: no-repeat;
+} */
+
+.contact-form > button {
+  margin-top: 10px;
+  width: 100px;
+  display: flex;
+}
+
+.contact-text {
+  color: white;
+  display: flex;
+}
+.input-field {
+  width: 350px;
+  height: 50px;
+  background-color: #11101d;
+  opacity: 80%;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+.textarea-field {
+  margin: 10px;
+  padding: 10px;
+  width: 350px;
+  height: 125px;
+  background-color: #11101d;
+  opacity: 80%;
+  border-radius: 10px;
+}
+
+.submit-button {
+  background-color: #33bbcf;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-self: flex-end;
+  margin-right: 10px;
+}
+
+.action-button {
+  background-color: #226069;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-self: flex-end;
+  margin-right: 10px;
+}
+
+.submit-button:hover {
+  background-color: #64d9eb;
+}
+
+.submit-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #33bbcf;
+}
+
+.submit-button span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+.action-button span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+p{
+  font-family: Poppins, sans-serif;
+}
