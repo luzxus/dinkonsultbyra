@@ -62,7 +62,7 @@ const Carousel1 = () => {
   ) : (
     <Carousel showArrows={true} showThumbs={false} swipeable>
       {data.map((image) => (
-        <div key={image.id} className="m-5 mb-10">
+        <div key={image.id} className="m-5 mb-10 items-baseline flex">
           <img
             style={{ maxWidth: "370px", height: "auto" }}
             src={image.img}
