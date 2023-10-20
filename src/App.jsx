@@ -2,6 +2,7 @@ import styles from "./style";
 import { Business,  Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero, HowItWorks } from "./components";
 import styled, { keyframes } from "styled-components";
 import Prices from "./components/Prices";
+import Contact from "./components/Contact";
 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
@@ -39,7 +40,7 @@ const App = () => (
         <Prices/>
         <HowItWorks/>
         <CTA />
-       {/*  <Contact/> */}
+        <Contact/>
         <Footer />
       </div>
     </div>

@@ -17,6 +17,8 @@ const Contact = () => {
       
         window.location.href = mailtoLink;
       };
+  const email = "DINKONSULTBYRA@HOTMAIL.COM".toLowerCase();
+
   return (
     <section className={`contact-page ${styles.flexCenter} ${styles.marginY} ${styles.padding}  flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}>
 <div className="flex-1 flex flex-col mt-2 mr-5">
@@ -34,19 +36,17 @@ const Contact = () => {
           offert på redovisningstjänster eller en kostnadsfri konsultation.
           <br />
           </p>
-          <p className="contact-details mt-2 flex justify-start items-center sm:w-full">
-            Din Konsultbyrå
+          <p className="leading-7 contact-details mt-2 flex-col flex justify-start sm:w-full">
+           <span className="font-bold">Din Konsultbyrå</span> 
+            Bissmarkgatan 16
             <br />
-            Bismarkgatan 13
+            30296 Halmstad
             <br />
-            30224 Halmstad
-            <br />
-            info@dinkonsultbyra.se
-            <br />
-            Tel: 073-999-99-99
+            <span className="font-bold">{email}</span>
+            Tel: 072-963-70-29
           </p>
         </div>
-        <form className="contact-form" onSubmit={handleSubmit}>
+        <form className="contact-form" onSubmit={handleSubmit} netlify>
           <input name="name" className="input-field" type="text" placeholder="Namn" />
           <input
             name="email"
@@ -60,9 +60,9 @@ const Contact = () => {
             placeholder="Meddelande"
           />
           <div className="flex items-center justify-end mt-2">
-             <button className="action-button" onClick={openOutlook}>
+       {/*       <button className="action-button" onClick={openOutlook}>
   <span>Öppna outlook</span>
-</button>
+</button> */}
       <button className="submit-button">
   <span>Skicka</span>
 </button>
