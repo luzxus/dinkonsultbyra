@@ -6,7 +6,7 @@ import styled, { keyframes } from "styled-components";
 const Hero = () => {
 
   const openOutlook = () => {
-    const recipientEmail = "recipient@example.com"; // Replace with the actual recipient's email address
+    const recipientEmail = "dinkonsultbyra@hotmail.com"; // Replace with the actual recipient's email address
     const subject = "Subject goes here"; // Replace with the desired subject
     const body = "Email body goes here"; // Replace with the desired email body
   
