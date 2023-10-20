@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useMemo, useRef } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./Carousel.css"; // Create a CSS file for styling
@@ -38,11 +38,13 @@ const data = [
     id: 6,
     img: review6,
   },
-
-  // Add more objects as needed
 ];
 const Carousel1 = () => {
-  return (
+  const isMobile = useMemo(() => {
+    return window.innerWidth < 1024;
+  }, []);
+
+  return !isMobile ? (
     <div className="carousel-container">
       <Carousel
         centerMode
@@ -57,6 +59,18 @@ const Carousel1 = () => {
         ))}
       </Carousel>
     </div>
+  ) : (
+    <Carousel showArrows={true} showThumbs={false} swipeable>
+      {data.map((image) => (
+        <div key={image.id} className="m-5 mb-10">
+          <img
+            style={{ maxWidth: "370px", height: "auto" }}
+            src={image.img}
+            alt={image.id}
+          />
+        </div>
+      ))}
+    </Carousel>
   );
 };
 
