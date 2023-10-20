@@ -39,8 +39,13 @@ const App = () => (
         <Clients />
         <Prices/>
         <HowItWorks/>
+        <div className="sm:hidden">
         <CTA />
+        </div>
+        <div className="hidden sm:block">
+
         <Contact/>
+        </div>
         <Footer />
       </div>
     </div>
