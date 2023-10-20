@@ -19,7 +19,7 @@ const Contact = () => {
       };
   return (
     <section className={`contact-page ${styles.flexCenter} ${styles.marginY} ${styles.padding}  flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}>
-<div className="flex-1 flex flex-col mt-2">
+<div className="flex-1 flex flex-col mt-2 mr-5">
       <h2 className={styles.heading2}>Kontakta oss idag</h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         Vi är redo för att hjälpa dig och ditt företag.

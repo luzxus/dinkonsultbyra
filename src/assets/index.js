@@ -25,16 +25,16 @@ import people02 from "./people02.png";
 import people03 from "./people03.png";
 import dklogo from "./dklogo.png"
 import piggy from "./piggy.png";
-import city3 from "./city3.png"
 import book from "./book.png"
 import lamp_desk_with_book_pen from "./lamp_desk_with_book_pen.jpg";
+import profil1 from "./profil1.png"
 export {
   airbnb,
   book,
   piggy,
   lamp_desk_with_book_pen,
-  city3,
   bill,
+  profil1,
   dklogo,
   binance,
   card,
