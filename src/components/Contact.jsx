@@ -30,6 +30,7 @@ const Contact = () => {
 
   return (
     <section
+      id="contact"
       className={`contact-page ${styles.flexCenter} ${styles.marginY} ${styles.padding}  flex-col bg-black-gradient-2 rounded-[20px] box-shadow relative`}
     >
       <div className="flex-1 flex flex-col mt-2 mr-5">
