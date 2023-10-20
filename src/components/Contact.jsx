@@ -63,28 +63,31 @@ const Contact = () => {
           netlify
           data-netlify="true"
           name="contact"
+          action="/contact"
+          method="post"
         >
+          <input type="hidden" name="form-name" value="contact" />
           <input
             name="name"
             className="input-field text-white"
             type="text"
             placeholder="Namn"
+            required
           />
           <input
+            required
             name="email"
             className="input-field text-white"
-            type="text"
+            type="email"
             placeholder="E-postadress"
           />
           <textarea
             name="message"
             className="textarea-field text-white"
             placeholder="Meddelande"
+            required
           />
           <div className="flex items-center justify-end mt-2">
-            {/*       <button className="action-button" onClick={openOutlook}>
-  <span>Öppna outlook</span>
-</button> */}
             <button className="submit-button">
               <span>Skicka</span>
             </button>
