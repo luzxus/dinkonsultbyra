@@ -1,0 +1,54 @@
+/* carousel styling */
+
+/* carousel-container styling */
+.carousel-container {
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 75rem;
+}
+
+/* Custom styling for the carousel item */
+.carousel-item {
+  margin-right: 10px; /* Add a small margin between items */
+  border: 1px solid #444; /* Add a border around each item */
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+  background-color: #222; /* Add a background color for better visibility */
+}
+
+/* Hover effect to show the next item */
+.carousel-item:hover {
+  transform: scale(1.05); /* Enlarge the item on hover */
+  background-color: #111; /* Darken the background color on hover */
+  cursor: pointer;
+}
+
+/* Styling for the carousel arrows */
+.carousel .control-arrow {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 24px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+/* Styling for the active arrow */
+.carousel .control-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Styling for the arrow icons */
+.carousel .control-next, .carousel .control-prev {
+  padding: 0;
+  margin: 0;
+}
+
+/* Hide the arrow text */
+.carousel .control-text {
+  display: none;
+}
+
+.carousel-container > div {
+  flex: 0 0 30%; /* Adjust the width to control the visible portion */
+  transition: transform 0.3s ease-in-out;
+}

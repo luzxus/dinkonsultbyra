@@ -23,11 +23,18 @@ import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
-import dklogo from "./dklogo.png"
+import dklogo from "./dklogo.png";
 import piggy from "./piggy.png";
-import book from "./book.png"
+import book from "./book.png";
 import lamp_desk_with_book_pen from "./lamp_desk_with_book_pen.jpg";
-import profil1 from "./profil1.png"
+import profil1 from "./profil1.png";
+import review1 from "./review1.png";
+import review2 from "./review2.png";
+import review3 from "./review3.png";
+import review4 from "./review4.png";
+import review5 from "./review5.png";
+import review6 from "./review6.png";
+
 export {
   airbnb,
   book,
@@ -35,6 +42,12 @@ export {
   lamp_desk_with_book_pen,
   bill,
   profil1,
+  review1,
+  review2,
+  review3,
+  review4,
+  review5,
+  review6,
   dklogo,
   binance,
   card,

@@ -1,5 +1,5 @@
 import React from "react";
-import { lamp_desk_with_book_pen } from "../assets";
+import { lamp_desk_with_book_pen, profil1 } from "../assets";
 import styles, { layout } from "../style";
 
 const Contact = () => {
@@ -30,10 +30,18 @@ const Contact = () => {
 
   return (
     <section
-      className={`contact-page ${styles.flexCenter} ${styles.marginY} ${styles.padding}  flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}
+      className={`contact-page ${styles.flexCenter} ${styles.marginY} ${styles.padding}  flex-col bg-black-gradient-2 rounded-[20px] box-shadow relative`}
     >
       <div className="flex-1 flex flex-col mt-2 mr-5">
-        <h2 className={styles.heading2}>Kontakta oss idag</h2>
+        <div id="title-image-container" className="flex">
+          <img
+            src={profil1}
+            width="300px"
+            className="mb-10 rounded-full absolute right-[0] top-[-7%]"
+          />
+
+          <h2 className={`${styles.heading2} mr-[14rem]`}>Kontakta oss idag</h2>
+        </div>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
           Vi är redo för att hjälpa dig och ditt företag.
         </p>
@@ -47,6 +55,7 @@ const Contact = () => {
             eller en kostnadsfri konsultation.
             <br />
           </p>
+
           <p className="leading-7 contact-details mt-2 flex-col flex justify-start sm:w-full">
             <span className="font-bold">Din Konsultbyrå</span>
             Bissmarkgatan 16

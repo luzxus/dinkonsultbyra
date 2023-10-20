@@ -155,7 +155,6 @@
   flex-direction: column;
 }
 
-
 /* .contact-page{
   background: url('./assets/lamp_desk_with_book_pen.jpg');
   background-size: ;
@@ -241,6 +240,7 @@
   line-height: 1;
 }
 
-p{
+p {
   font-family: Poppins, sans-serif;
 }
+

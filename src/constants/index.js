@@ -1,4 +1,4 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star } from "../assets";
+import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star, review1, review2, review3 } from "../assets";
 
 export const navLinks = [
   {
@@ -55,27 +55,21 @@ export const features = [
 export const feedback = [
   {
     id: "feedback-1",
-    content:
-      "Rekommenderar verkligen Robin på dinKonsultbyra. Supertrevlig, enkel att ha att göra med och snabb på att svara",
-    name: "Tobias",
+    
     //title: "Tobias",
-    img: people03,
+    img: review1,
   },
   {
     id: "feedback-2",
-    content:
-      "Mycket bra! Trevligt bemötande och kunnig personal",
-    name: "Sebastian",
+   
     //title: "Sebastian",
-    img: people02,
+    img: review2,
   },
   {
     id: "feedback-3",
-    content:
-      "Allt toppen! Fick hjälp med årsbokslut och deklaration. Snabbt och smidigt. Bra kommunikation. Tack!",
-    name: "Kajsa",
+
     //title: "Kajsa",
-    img: people01,
+    img: review3,
   },
 ];
 

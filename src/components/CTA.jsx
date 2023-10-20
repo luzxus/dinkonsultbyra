@@ -17,7 +17,7 @@ const CTA = () => {
 
   return (
     <section
-      className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}
+      className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow text-center sm:text-inherit`}
     >
       <div className="flex-1 sm:flex-none flex flex-col md:mr-[3.5rem]">
         <h2 className={styles.heading2}>Kontakta oss idag</h2>
@@ -48,7 +48,7 @@ const CTA = () => {
         </p>
       </div>
 
-      <div className="w-full hidden sm:flex justify-end flex-col items-center">
+      <div className="w-full flex justify-end flex-col items-center">
         <img src={profil1} width="300px" className="mb-10 rounded-full" />
 
         <div className="hidden sm:flex w-[150px]">
