@@ -12,6 +12,8 @@ const CTA = () => {
   
     window.location.href = mailtoLink;
   };
+  const email = "DINKONSULTBYRA@HOTMAIL.COM".toLowerCase();
+
 return(
   <section className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}>
 
@@ -36,12 +38,12 @@ return(
       
           <p className="leading-7 contact-details mt-2 flex-col flex justify-start sm:w-full">
            <span className="font-bold">Din Konsultbyrå</span> 
-            Bismarkgatan 13
+            Bissmarkgatan 16
             <br />
-            30224 Halmstad
+            30296 Halmstad
             <br />
-            <span className="font-bold">info@dinkonsultbyra.se</span>
-            Tel: 073-999-99-99
+            <span className="font-bold">{email}</span>
+            Tel: 072-963-70-29
           </p>
         </div>
 
