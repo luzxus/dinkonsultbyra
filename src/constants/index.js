@@ -34,14 +34,14 @@ export const features = [
     icon: star,
     title: "Löpande redovisning",
     content:
-      "Vi hjälper dig med dinlöpande reaovisning och ser till att få ett bra flöde när det gäller rutiner och rapportering.",
+      "Vi hjälper dig med din löpande reaovisning och ser till att få ett bra flöde när det gäller rutiner och rapportering.",
   },
   {
     id: "feature-2",
     icon: star,
     title: "Årsredovisning",
     content:
-      "dinkonsultbyra hjälper dig med att upprätta bokslut samt årsredovisning. Våra revisorer säkerställer att allt utförs enligt god redovisningssed.",
+      "Vi hjälper dig med att upprätta bokslut samt årsredovisning. Våra revisorer säkerställer att allt utförs enligt god redovisningssed.",
   },
   {
     id: "feature-3",
