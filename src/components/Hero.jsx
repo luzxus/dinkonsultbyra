@@ -4,6 +4,16 @@ import GetStarted from "./GetStarted";
 import styled, { keyframes } from "styled-components";
 
 const Hero = () => {
+
+  const openOutlook = () => {
+    const recipientEmail = "recipient@example.com"; // Replace with the actual recipient's email address
+    const subject = "Subject goes here"; // Replace with the desired subject
+    const body = "Email body goes here"; // Replace with the desired email body
+  
+    const mailtoLink = `mailto:${recipientEmail}?subject=${subject}&body=${body}`;
+  
+    window.location.href = mailtoLink;
+  };
   return (
     <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
@@ -23,7 +33,7 @@ const Hero = () => {
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         Är du i behov av professionell bokföring och redovisning till rimliga priser?
         </p>
-        <div className="ss:flex hidden md:mr-4 mr-0">
+        <div onClick={openOutlook} className="ss:flex hidden md:mr-4 mr-0">
             <GetStarted />
           </div>
       </div>
@@ -37,7 +47,7 @@ const Hero = () => {
         {/* gradient end */}
       </div>
 
-      <div className={`ss:hidden ${styles.flexCenter}`}>
+      <div onClick={openOutlook} className={`ss:hidden ${styles.flexCenter}`}>
         <GetStarted />
       </div>
     </section>
