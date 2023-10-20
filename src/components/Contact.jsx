@@ -4,10 +4,20 @@ import styles, { layout } from "../style";
 
 const Contact = () => {
 
-    const handleSubmit = (values) => {
-        console.log("values", values)
-    }
-
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+    
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => alert("Thank you for your submission"))
+      .catch((error) => alert(error));
+  };
     const openOutlook = () => {
         const recipientEmail = "recipient@example.com"; // Replace with the actual recipient's email address
         const subject = "Subject goes here"; // Replace with the desired subject
@@ -46,7 +56,7 @@ const Contact = () => {
             Tel: 072-963-70-29
           </p>
         </div>
-        <form className="contact-form" onSubmit={handleSubmit} netlify>
+        <form className="contact-form" onSubmit={handleSubmit} netlify data-netlify="true" name="contact">
           <input name="name" className="input-field" type="text" placeholder="Namn" />
           <input
             name="email"
