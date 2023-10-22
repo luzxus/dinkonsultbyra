@@ -78,10 +78,11 @@ body {
 .swiper-slide img {
   width: 100%;
   height: auto;
-  border-radius: 2rem;
   object-fit: cover;
 }
-
+.swiper-pagination-bullet {
+  background-color: white;
+}
 .swiper-slide img::before {
   content: "";
   background-color: "white";

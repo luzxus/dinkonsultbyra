@@ -1,5 +1,5 @@
 import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
@@ -25,6 +25,7 @@ const Carousel2 = () => {
     { id: 5, title: 'review 5', img:review5 },
     { id: 6, title: 'review 6', img: review6 },
   ]
+  const swiper = useSwiper()
   return (
     <div className="Carousel2-container">
       <Swiper
@@ -54,13 +55,13 @@ const Carousel2 = () => {
           </SwiperSlide>
         ))}
 
-        <div className="slider-controller">
-          <div className="swiper-button-prev slider-arrow">
+        <div className="slider-controller absolute left-[16rem] bg-transparent">
+          {/*  <div className="swiper-button-prev slider-arrow" onClick={() => swiper.slidePrev()}>
             <FaArrowCircleLeft />
           </div>
           <div className="swiper-button-next slider-arrow">
             <FaArrowCircleRight />
-          </div>
+          </div>  */}
           <div className="swiper-pagination sm:block"></div>
         </div>
       </Swiper>
