@@ -48,7 +48,7 @@ const Prices = () => {
         {tjänster.map((tjänst, index) => (
           <div
             key={tjänst.title}
-            className="flex flex-col feedback-card p-4 h-full max-w-[300px] sm:w-full"
+            className="rounded-3xl flex flex-col feedback-card p-4 h-full max-w-[300px] sm:w-full"
           >
             <h2 className="font-poppins font-semibold text-[32px] text-white">
               {tjänst.title}

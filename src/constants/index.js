@@ -82,7 +82,7 @@ export const stats = [
   {
     id: "stats-2",
     title: "Företag som litar på oss",
-    value: "10+",
+    value: "40+",
   },
   {
     id: "stats-3",
@@ -127,7 +127,7 @@ export const socialMedia = [
   {
     id: "social-media-2",
     icon: facebook,
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/profile.php?id=100087365653339",
   },
 
   {
